@@ -23,7 +23,6 @@ for line in sys.stdin:
         # count was not a number, so silently
         # ignore/discard this line
         continue
-
     # this IF-switch only works because Hadoop sorts map output
     # by key (here: word) before it is passed to the reducer
     if current_word == word:
