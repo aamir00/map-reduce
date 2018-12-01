@@ -15,14 +15,17 @@ def reducer():
             #if the key is changed print the previous anagram list
             #and empty the array
             res=" ".join(current_array)
-            print(res)
+            if(len(current_array)>1):
+                res=" ".join(current_array)
+                print(res)
             if current_word:
                 current_array = []
                 word = current_word
                 current_array.append(value)
 
-    res=" ".join(current_array)
-    print(res)
+    if(len(current_array)>1):
+        res=" ".join(current_array)
+        print(res)
     current_array = []
 
 
